@@ -1,4 +1,4 @@
-#include stdio
+#include <stdio.h>
 
 /**
  * main - Entry
@@ -7,7 +7,19 @@
  */
 int main(void)
 {
-	int i = 65;
-	int j = 97;
+	int i = 97;
+	int j = 65;
 
-	while 
+	while (i <= 122)
+	{
+		putchar(i);
+		i += 1;
+	}
+	while (j <= 90)
+	{
+		putchar(j);
+		j += 1;
+	}
+	putchar('\n');
+	return (0);
+}
