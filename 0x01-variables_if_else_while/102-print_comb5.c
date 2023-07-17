@@ -32,8 +32,8 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				n = j + 1;
 				m += 1;
+				n = m;
 			}
 			m = i;
 			j += 1;
