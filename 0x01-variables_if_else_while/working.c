@@ -7,16 +7,20 @@
  */
 int main(void)
 {
-	int i, j, m, n;
+	int i = 48;
+	int j = 48;
+	int m = 48;
+	int n = 48;
 
-	for (i = 48; i <= 57; i++)
+	while (i <= 57)
 	{
-		for (j = 48; j <= 57; j++)
+		while (j <= 57)
 		{
-			for (m = 48; m <= 57; m++)
+			while (m <= 57)
 			{
-				for (n = 48; n <= 57; n++)
+				while (n <= 57)
 				{
+					n += 1;
 					putchar(i);
 					putchar(j);
 					putchar(' ');
@@ -28,8 +32,14 @@ int main(void)
 						putchar(' ');
 					}
 				}
+				m += 1;
+				n = m;
 			}
+			m = i;
+			j += 1;
 		}
+		j = 48;
+		i += 1;
 	}
 	putchar('\n');
 	return (0);
