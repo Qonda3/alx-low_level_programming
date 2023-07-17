@@ -9,7 +9,7 @@ int main(void)
 {
 	int num = 48;
 	int alpha = 97;
-	
+
 	while (num <= 57)
 	{
 		putchar(num);
