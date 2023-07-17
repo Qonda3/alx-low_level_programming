@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -7,27 +9,22 @@
  */
 int main(void)
 {
-	int i, j, m, n;
+	int i;
+	int j;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (j = 48; j <= 57; j++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			for (m = 48; m <= 57; m++)
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+			if (i != 99 || j != 99)
 			{
-				for (n = 48; n <= 57; n++)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(m);
-					putchar(n);
-					if (i != 57 && j != 56)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
