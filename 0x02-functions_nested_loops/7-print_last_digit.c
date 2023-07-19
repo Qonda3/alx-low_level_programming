@@ -3,6 +3,7 @@
 
 /**
  * print_last_digit - prints last digit of a number
+ * @last: the number we take the last digit of
  *
  * Return: last digit
  */
@@ -12,7 +13,7 @@ int print_last_digit(int last)
 	int c;
 
 	res = last % 10;
-	if ( res >= 0)
+	if (res >= 0)
 	{
 		c = res + 48;
 		_putchar(c);
