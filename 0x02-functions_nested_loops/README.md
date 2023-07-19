@@ -5,4 +5,5 @@ C files creating functions
 1-alphabet.c print alphabets in lowercase.
 2-print_alphabet_x10.c print alphabets in lowercase x 10.
 3-islower.c checks for lowercase character.
-4-isalpha.c checks for alphabetic character. 
+4-isalpha.c checks for alphabetic character.
+5-sign.c prints the sign of a number. 
