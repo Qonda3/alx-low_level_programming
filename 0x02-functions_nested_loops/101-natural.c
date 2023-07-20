@@ -10,8 +10,8 @@ int main(void)
 	int a = 3;
 	int b = 5;
 	int sum = 0;
-	int i; 
-
+	int i;
+	
 	for (i = 1; i < 1024; i++)
 	{
 		if ((i % a) == 0 || (i % b) == 0)
@@ -19,6 +19,6 @@ int main(void)
 			sum = sum  + i;
 		}
 	}
-	printf("The sum of these multiples %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
