@@ -11,8 +11,8 @@ int main(void)
 	long int b = 2;
 	long int sum = 0;
 	long int i;
+	long int total = 2;
 	
-	printf("%ld", b);
 	for (i = 1; i <= 48; i++)
 	{
 		sum = a + b;
@@ -20,12 +20,13 @@ int main(void)
 		{
 			if (sum % 2 == 0)
 			{
-				printf(", %ld", sum);
+				total = total + sum;
 			}
 		}
 		a = b;
 		b = sum;
 	}
+	printf("%ld", total);
 	printf("\n");
 	return (0);
 }
