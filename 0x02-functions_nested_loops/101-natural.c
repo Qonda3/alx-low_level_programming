@@ -9,16 +9,16 @@ int main(void)
 {
 	int a = 3;
 	int b = 5;
-	int sum;
+	int sum = 0;
 	int i; 
 
-	for (i = 0; i < 1024; i++)
+	for (i = 1; i < 10; i++)
 	{
-		if ( i%a || i%b)
+		if ((i % a) == 0 || (i % b) == 0)
 		{
 			sum = sum  + i;
 		}
 	}
-	printf("The sum of these multiples %d\n", i);
+	printf("The sum of these multiples %d\n", sum);
 	return (0);
 }
