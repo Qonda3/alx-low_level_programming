@@ -13,4 +13,5 @@ C files creating functions
 9-times_table.c prints the 9 times table.
 10-add.c adds two integers.
 11-print_to_98.c prints all natural numbers from n to 98.
-100-times_table.c prints the n times table. 
+100-times_table.c prints the n times table.
+101-natural.c add numbers multiples of 3 and 5 below 1024. 
