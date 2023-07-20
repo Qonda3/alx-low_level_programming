@@ -11,4 +11,6 @@ C files creating functions
 7-print_last_digit.c prints the last digit number.
 8-24_hours.c prints every minute of the day.
 9-times_table.c prints the 9 times table.
-10-add.c adds two integers. 
+10-add.c adds two integers.
+11-print_to_98.c prints all natural numbers from n to 98.
+100-times_table.c prints the n times table. 
