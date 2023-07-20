@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int i;
-	int  sum = 0;
+	long int a = 1;
+	long int b = 2;
+	long int i;
+	long int  sum = 0;
 
-	printf("%d, %d", a, b);
-	for (i = 1; i <= 50; i++)
+	printf("%ld, %ld", a, b);
+	for (i = 1; i <= 48; i++)
 	{
 		sum = a + b;
-		printf(", %d", sum);
+		printf(", %ld", sum);
 		a = b;
 		b = sum;
 	}
