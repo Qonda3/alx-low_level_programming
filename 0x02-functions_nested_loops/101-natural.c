@@ -11,12 +11,12 @@ int main(void)
 	int b = 5;
 	int sum = 0;
 	int i;
-	
+
 	for (i = 1; i < 1024; i++)
 	{
 		if ((i % a) == 0 || (i % b) == 0)
 		{
-			sum = sum  + i;
+			sum = sum + i;
 		}
 	}
 	printf("%d\n", sum);
