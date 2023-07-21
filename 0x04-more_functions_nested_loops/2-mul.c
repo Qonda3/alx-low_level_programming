@@ -7,5 +7,6 @@
 int mul(int a, int b)
 {
 	int times = a * b;
+
 	return (times);
 }
