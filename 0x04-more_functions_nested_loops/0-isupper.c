@@ -1,5 +1,5 @@
 /**
- * _isupper(int c) - checks for upper character
+ * _isupper - checks for upper character
  * @c: integer
  * Return: 1 if c is uppercase and 0 otherwise.
  */
