@@ -12,3 +12,4 @@ Create functions with loops and if statements
 8-print_square.c prints a square.
 9-fizz_buzz.c prints a triangle.
 10-print_triangle.c prints a triangle.
+100-prime_factor.c prime factor

@@ -8,7 +8,7 @@
 int main(void)
 {
 	long int num = 612852475143;
-	int i = 2;
+	long int i = 2;
 	long int factor = 0;
 
 	while (num != 1)
@@ -19,7 +19,7 @@ int main(void)
 			{
 				num = num / i;
 			}
-			factor = i;
+			factor = num;
 		}
 		i++;
 	}
