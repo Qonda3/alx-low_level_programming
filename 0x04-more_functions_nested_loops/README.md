@@ -10,3 +10,5 @@ Create functions with loops and if statements
 6-print_line.c draws a straight line.
 7-print_diagonal.c draws a diagonal line.
 8-print_square.c prints a square.
+9-fizz_buzz.c prints a triangle.
+10-print_triangle.c prints a triangle.
