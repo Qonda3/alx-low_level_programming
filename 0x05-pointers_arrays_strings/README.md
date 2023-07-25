@@ -5,3 +5,5 @@ Pointers and Arrays
 1-swap.c function that swaps the values of two integers.
 2-strlen.c function that returns the length of a string.
 3-puts.c funtion that prints a string.
+4-print_rev.c prints a string in reverse.
+
