@@ -7,3 +7,5 @@ Pointers and Arrays
 3-puts.c funtion that prints a string.
 4-print_rev.c prints a string in reverse.
 5-rev_string.c function that reverses a string.
+6-puts2.c function that prints every other char of a string.
+
