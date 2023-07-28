@@ -6,11 +6,18 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int a, b, sum;
+	int i = 0;
+	int res;
 
-	a = s1[0];
-	b = s2[0];
+	if (s1 == s2)
+	{
+		return (0);
+	}
+	while (s1[i] == s2[i])
+	{
+		i++;
+	}
+	res = s1[i] - s2[i];
 
-	sum = a - b;
-	return (sum);
+	return (res);
 }
