@@ -8,7 +8,8 @@ char *cap_string(char *wrd)
 	int i = 0;
 	int k;
 	int change = 0;
-	char sep[] = {' ', '\t', '\n', '.'};
+	char sep[] = {
+		' ', '\t', '\n', '.'};
 
 	while (wrd[i] != '\0')
 	{
@@ -18,9 +19,9 @@ char *cap_string(char *wrd)
 			{
 				change = 0;
 				i++;
-				while (change == 0 )
+				while (change == 0)
 				{
-				       	if (wrd[i] > 'a' && wrd[i] < 'z')
+					if (wrd[i] > 'a' && wrd[i] < 'z')
 					{
 						wrd[i] = wrd[i] - 32;
 						change++;
