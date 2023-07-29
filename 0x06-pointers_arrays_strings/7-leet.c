@@ -5,8 +5,8 @@
  */
 char *leet(char *wrd)
 {
-	char sub[] = {'a', 'e', 'o', 't', 'l'};
-	char encd[] = {'4', '3', '0', '7', '1'};
+	char sub[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	char encd[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
 	int i = 0;
 	int k;
 
