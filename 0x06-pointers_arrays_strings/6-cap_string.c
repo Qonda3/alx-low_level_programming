@@ -27,9 +27,7 @@ char *cap_string(char *wrd)
 						change++;
 					}
 					if (wrd[i] > 'A' && wrd[i] < 'Z')
-					{
 						change++;
-					}
 					i++;
 				}
 			}

@@ -5,24 +5,22 @@
  */
 char *leet(char *wrd)
 {
-	char sub[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-	char encd[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
-	int i = 0;
-	int k;
-
-	while (wrd[i] == '\0')
+	int i, j, count;
+	char sub[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	char encd[10] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	
+	for (i = 0; wrd[i] != '\0'; i++)
 	{
-		k = 0;
-		while (k < 4)
+		count++;
+		for (j = 0; j <= 10; j++)
 		{
-			if (wrd[i] == sub[k])
+			if (wrd[i] == sub[j])
 			{
-				wrd[i] = encd[k];
-				break;
+				wrd[i] = encd[j];
 			}
-			k++;
 		}
-		i++;
 	}
+	wrd[count - 1] = '\n';
+	wrd[count] = '\0';
 	return (wrd);
 }
