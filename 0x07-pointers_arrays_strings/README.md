@@ -10,3 +10,4 @@ Functions on pointers, arrays and strings
 7-print_chessboard.c prints the chessboard.
 8-print_diagsums.c prints the sum of the two diagonals.
 100-set_string.c sets the value of a pointer to a char.
+101-crackme_password create a file.
