@@ -8,3 +8,4 @@ recursive functions
 5-sqrt_recursion.c natural square root of a number.
 6-is_prime_number.c prime number.
 100-is_palindrome.c
+101-wildcmp.c compares two strings
