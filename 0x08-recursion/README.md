@@ -5,3 +5,4 @@ recursive functions
 2-strlen_recursion.c length of a string.
 3-factorial.c factorial of a given number.
 4-pow_recursion.c exponential calculation.
+5-sqrt_recursion.c natural square root of a number.
