@@ -4,6 +4,7 @@
  * main - Entry point
  * @argc: number of command-line arg passed
  * @argv: array of char pointers
+ * Return: integer
  */
 int main(int argc, char *argv[])
 {
