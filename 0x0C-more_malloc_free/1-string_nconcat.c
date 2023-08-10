@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 /**
  * string_nconcat - concatenates two strings
  * @s1: pointer to a array of char
@@ -14,6 +15,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int count;
 	char *add;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	count = 0;
 	for (i = 0; s1[i] != '\0'; i++)
 	{
@@ -29,8 +34,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (j = 0; j < n; j++)
 	{
-		add[i] = s2[j];
-		i++;
+		add[count] = s2[j];
+		count++;
 	}
 	return (add);
 }
