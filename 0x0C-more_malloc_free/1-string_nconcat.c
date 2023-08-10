@@ -5,7 +5,7 @@
  * string_nconcat - concatenates two strings
  * @s1: pointer to a array of char
  * @s2: pointer to a array of char
- * @n: number of char to concatenate from s2;
+ * @n: number of char to concatenate from s2
  * Return: a pointer to array of char
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
