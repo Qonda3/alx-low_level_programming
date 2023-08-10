@@ -24,10 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		count++;
 	for (i = 0; s2[i] != '\0'; i++)
 		count2++;
-	if (count2 <= n)
-		num = count + count2;
-	if (count2 > n)
-		num = count + n;
+	num = count + n;
 	add = malloc(num + 1);
 	if (add == NULL)
 		return (NULL);
