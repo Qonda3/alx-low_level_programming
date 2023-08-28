@@ -2,6 +2,20 @@
 #include <stddef.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
+/**
+ * string - print string
+ * @str: array of char
+ */
+void string(char *str)
+{
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", str);
+}
+
 
 /**
  * print_all - prints anything
@@ -10,7 +24,6 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0, j;
-	char *str;
 	va_list arg;
 
 	if (format == NULL)
@@ -34,21 +47,18 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(arg, double));
 				break;
 			case 's':
-				str = va_arg(arg, char *);
-				if (str == NULL)
-				{
-					printf("(nil)");
-					break;
-				}
-				printf("%s", str);
+				string(va_arg(arg, char *));
 				break;
 			default:
 				j = -1;
 				break;
 		}
 		i++;
-		if ((format[i] != '\0') && (j != -1))
+		while ((j != -1) && (format[i] != '\0'))
+		{
 			printf(", ");
+			j = -1;
+		}
 	}
 	printf("\n");
 	va_end(arg);
