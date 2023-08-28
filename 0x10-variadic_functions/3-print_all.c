@@ -9,7 +9,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i, j;
+	int i = 0, j;
 	char *str;
 	va_list arg;
 
