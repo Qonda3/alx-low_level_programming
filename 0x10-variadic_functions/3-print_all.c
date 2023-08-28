@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 	int i = 0, j;
 	va_list arg;
 
-	if (format == NULL)
+	if ((format == NULL))
 	{
 		va_end(arg);
 		return;
