@@ -14,7 +14,10 @@ void print_all(const char * const format, ...)
 	va_list arg;
 
 	if (format == NULL)
+	{
+		va_end(arg);
 		return;
+	}
 	va_start(arg, format);
 	while (format[i] != '\0')
 	{
