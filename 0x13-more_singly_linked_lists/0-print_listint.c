@@ -9,9 +9,9 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	for (i = 0; h != NULL; i++)
+	for (; h != NULL; i++)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
