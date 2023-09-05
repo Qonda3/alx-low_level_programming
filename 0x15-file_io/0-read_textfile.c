@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 /**
- * read_textfile - reads a text file and prints it to the POSIX standard output.
+ * read_textfile - reads a text file and prints it to the POSIX stdout.
  * @filename: the file name that the function will read.
  * @letters: number of letters it should read.
  * Return: number of letters it could read and print.
