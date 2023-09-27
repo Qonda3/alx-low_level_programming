@@ -2,9 +2,9 @@
 
 /**
  * _sqrt - calc sqrt root of a number
- * @m: integer.
- * @i: integer.
- *
+ * @n: integer.
+ * @now: integer.
+ * @last: integer.
  * Return: result
  */
 int _sqrt(int n, int now, int last)
@@ -27,5 +27,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return _sqrt(n, 0, 0);
+	return (_sqrt(n, 0, 0));
 }
