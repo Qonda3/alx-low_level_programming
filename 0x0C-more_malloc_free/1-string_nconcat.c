@@ -19,7 +19,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		count1++;
 	while (s2[count2] != '\0')
 		count2++;
-	ptr = malloc(count1 + n + 1);
+	if (n >= count2)
+		ptr = malloc(count1 + count2 + 1);
+	if (n < count2)
+		ptr = malloc(count1 + n + 1);
 	if (ptr == NULL)
 		return (NULL);
 	while (i < count1)
